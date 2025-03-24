@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class='card'>
+    <div class='card-header'>
+        <h1 class='card-title'>Aluno</h1>
+        <div class= 'row' >
+            <a href={% url aluno-add %} class='btn btn-primary text right'>Novo Aluno</a>
+    </div>
+{% endblock content %}

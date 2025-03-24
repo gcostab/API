@@ -1,0 +1,10 @@
+<h1>Vou editar por aqui!</h1>
+
+<form action="/pessoa/add/" method="post">
+    
+    {% csrf_token %}
+    <!-- as_p é para colocar em parágrafos-->
+    {{form.as_p}}
+
+    <input type="submit" value="Salvar">
+</form>

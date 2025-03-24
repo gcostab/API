@@ -1,0 +1,14 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    <p>Tem certeza que deseja deletar a pessoa: <b>{{ object }}</b>?</p>
+    {{ form_as.p }}
+
+    <button type="submit">Sim</button>
+
+    <a href={% url 'pessoa_list' %}>Não</a>
+</form>
+{% endblock %}

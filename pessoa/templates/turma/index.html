@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class='card'>
+    <div class='card-header'>
+        <h1 class='card-title'>Turma</h1>
+        <div class= 'row' >
+            <a href={% url turma-add %} class='btn btn-primary text right'>Nova Turma</a>
+    </div>
+{% endblock content %}
